@@ -1,0 +1,39 @@
+/* # General */
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ui {
+    position:absolute;
+}
+
+background, player, ui {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+/* # Classes */
+
+background {
+    z-index: -1;
+    background-image: url('../assets/img/background.png');
+    background-position: bottom center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+player {
+    background-image: url('../assets/img/player.jpg');
+    background-repeat: no-repeat;
+    width: 407px;
+    height: 389px;
+}
