@@ -9,10 +9,6 @@ html, body {
     overflow: hidden;
 }
 
-ui {
-    position:absolute;
-}
-
 background, player, ui {
     position: absolute;
     display: block;
