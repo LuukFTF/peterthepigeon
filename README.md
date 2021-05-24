@@ -89,9 +89,9 @@ player pickup item {A}
 player movable
 player use {A}
 player item use {A>R}
-```
 
 level 2
+```
 
 ### could have
 ```md
