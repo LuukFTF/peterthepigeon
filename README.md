@@ -3,7 +3,7 @@ Typescript Game Project for Programming 4 & Design 4 classes (CMGT)
 
 
 ## Todo
-
+```md
 -[x] devplan
 
 -[] uml
@@ -18,9 +18,9 @@ Typescript Game Project for Programming 4 & Design 4 classes (CMGT)
     -[] composition
     -[] min 1x inheritance
 
--[] eindoplevering
-    -[] deadline
-    -[] geen gamebreaking bugs
+-[] eindoplevering  
+    -[] deadline  
+    -[] geen gamebreaking bugs 
     -[] inleverdocument
     -[] werkende link naar game
     -[] verantwoording per keuzes per onderdeel
@@ -43,9 +43,9 @@ Typescript Game Project for Programming 4 & Design 4 classes (CMGT)
     -[] pixelarts couldhave
     -[] sound effects
     -[] music
-
+```
 ### musthave
-
+```md
 -[] controls
 -[] pigeon moveable
 
@@ -68,10 +68,10 @@ Typescript Game Project for Programming 4 & Design 4 classes (CMGT)
 -[] object pool - moving cars
 
 -[] level 1
-
+```
 
 ### should have
-
+```md
 player
 
 local multiplayer
@@ -89,11 +89,12 @@ player pickup item {A}
 player movable
 player use {A}
 player item use {A>R}
-
+```
 
 level 2
 
 ### could have
+```md
 call/send pigeon (for singleplayer) {Y}
 
 player ui
@@ -108,6 +109,6 @@ pigeon poison {Y}
 npc/enemys kill
 
 level 3
-
+```
 
 ## UML
