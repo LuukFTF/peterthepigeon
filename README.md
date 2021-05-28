@@ -112,3 +112,120 @@ level 3
 ```
 
 ## UML
+
+```ts
+class Game {
+    gameLoop()
+    has class Level {
+
+        |
+        has class Pigeon {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+            - speedX : number
+            - speedY : number
+            - inputUp : number 
+            - inputDown : number 
+            - inputLeft : number 
+            - inputRight : number 
+            - inputA : number
+            - inputB : number
+            - inputX : number
+            - inputY : number
+            - inputL : number
+            - inputR : number
+            - inputM1 : number
+            - inputM2 : number
+            flying : boolean
+            slotR : Item = "nightvision_goggles"
+            slot1 : Item = "empty_hand"
+            slot2 : Item = "hacking_device"
+            slot3 : Item = "lockpick_tool"
+            slot4 : Item = "poison_vial"
+            nightvision : boolean
+            |
+            + spawn() : void
+            + update() : void
+            + reset() : void
+            - onKeyUp()
+            - onKeyDown()
+            useQuickHack()
+            usePoison()
+            useLockpick()
+            useDefault()
+            toggleNightvision()
+            openMenu()
+            openInventory()
+            pickupItem()
+            dropItem()
+            + checkPlayerCollision()
+            + checkItemCollision()
+            + checkBorderCollision()
+            + checkWallCollsion()
+            + checkDoorCollsion()
+            + checkCarCollsion()
+            + getRectangle() : ClientRect
+            + getFutureRectangle() : ClientRect
+        }
+        |
+        has class Player {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+            - speedX : number
+            - speedY : number
+            - inputUp : number 
+            - inputDown : number 
+            - inputLeft : number 
+            - inputRight : number 
+            - inputA : number
+            - inputB : number
+            - inputX : number
+            - inputY : number
+            - inputL : number
+            - inputR : number
+            - inputM1 : number
+            - inputM2 : number
+            |
+            - onKeyUp()
+            - onKeyDown()
+        }
+        has class Item {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+            - droppped : boolean
+            |
+            + spawn() : void
+            + update() : void
+            + reset() : void
+            |
+            extends class Hacking_device {}
+            extends class Empty_hand {}
+            extends class Hacking_device {}
+            extends class Lockpick_tool {}
+            extends class Poison_vial {}
+        }
+        |
+        has class Wall {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+        }
+        |
+        has class Door {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+        }
+        |
+        has class Car {
+            - element : HTMLElement
+            - posX : number
+            - posY : number
+        }
+    }
+}
+
+```
